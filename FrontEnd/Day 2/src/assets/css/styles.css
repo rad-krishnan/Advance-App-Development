@@ -1,0 +1,104 @@
+/* src/styles.css */
+
+.container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+  }
+  
+  .container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .container form div {
+    margin-bottom: 10px;
+  }
+  
+  .container form label {
+    font-weight: bold;
+  }
+  
+  .container form input,
+  .container form select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .container form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .container form button:hover {
+    background-color: #0056b3;
+  }
+
+  .flash-message {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #4caf50; /* Green background color */
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Drop shadow effect */
+    z-index: 999; /* Ensure it's on top of other content */
+    animation: slideIn 0.5s forwards, fadeOut 0.5s 2.5s forwards; /* Animation */
+  }
+  
+  @keyframes slideIn {
+    0% {
+      top: -50px; /* Start position */
+      opacity: 0; /* Hidden */
+    }
+    100% {
+      top: 20px; /* End position */
+      opacity: 1; /* Visible */
+    }
+  }
+  
+  @keyframes fadeOut {
+    0% {
+      opacity: 1; /* Visible */
+    }
+    100% {
+      opacity: 0; /* Hidden */
+    }
+  }
+  .password-input {
+    position: relative;
+  }
+  
+  .password-input input {
+    padding-right: 30px; /* Space for the button */
+  }
+  
+  .password-input .toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 12px; /* Adjust the font size */
+    padding: 5px; /* Adjust the padding */
+  }
