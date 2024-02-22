@@ -1,0 +1,125 @@
+/* src/styles.css */
+
+.container {
+  max-width: 400px;
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  display: grid; 
+  place-items: center;;
+  flex-direction: column;
+  text-align: left; /* Center text horizontally */
+}
+
+.container img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.container h2 {
+  margin-bottom: 20px;
+}
+
+.container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center form elements horizontally */
+  width: 100%; /* Set form width to 100% */
+}
+
+.container form div {
+  margin-bottom: 10px;
+  width: 100%; /* Set div width to 100% */
+}
+
+.container form label {
+  font-weight: bold;
+  width: 100%; /* Set label width to 100% */
+}
+
+.container form input,
+.container form select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%; /* Set input/select width to 100% */
+  box-sizing: border-box; /* Include padding and border in the width */
+}
+
+.container form button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  width: 100%; /* Set button width to 100% */
+}
+
+.container form button:hover {
+  background-color: #0056b3;
+}
+
+.flash-message {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  animation: slideIn 0.5s forwards, fadeOut 0.5s 2.5s forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    top: -50px;
+    opacity: 0;
+  }
+  100% {
+    top: 20px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.password-input {
+  position: relative;
+}
+
+.password-input input {
+  padding-right: 30px; /* Space for the button */
+}
+
+.password-input .toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 12px; /* Adjust the font size */
+  padding: 5px; /* Adjust the padding */
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
