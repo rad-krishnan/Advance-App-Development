@@ -1,0 +1,133 @@
+.container {
+  max-width: 400px;
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  display: grid; 
+  place-items: center;
+  flex-direction: column;
+  text-align: left;
+  margin-top: 2%;
+}
+.container_log {
+  max-width: 400px;
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  display: grid; 
+  place-items: center;
+  flex-direction: column;
+  text-align: left;
+  margin-top: 5%;
+}
+.container img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.container h2 {
+  margin-bottom: 20px;
+}
+
+.container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.container form div {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.container form label {
+  font-weight: bold;
+  width: 100%;
+}
+
+.container form input,
+.container form select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: calc(100% - 32px); /* Adjusted width to accommodate icon */
+  box-sizing: border-box;
+}
+
+.container form .password-input {
+  position: relative;
+}
+
+.container form .password-input input {
+  padding-right: 40px; /* Adjusted padding to accommodate icon */
+}
+
+.container form .password-input .toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 8px; /* Adjusted position for icon */
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.container form button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  width: 100%;
+}
+
+.container form button:hover {
+  background-color: #0056b3;
+}
+
+.flash-message {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  animation: slideIn 0.5s forwards, fadeOut 0.5s 2.5s forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    top: -50px;
+    opacity: 0;
+  }
+  100% {
+    top: 20px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
