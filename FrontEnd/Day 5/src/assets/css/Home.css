@@ -1,0 +1,203 @@
+
+.navbar {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 100px;
+  display: flex;
+  justify-content: space-between; /* Align items to the left and right */
+  font-size: large;
+  }
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.navbar ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.navbar ul li:last-child {
+  margin-right: 0;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  background-color: #f4f4f4;
+  width: 200px;
+  padding: 20px;
+  font-size: large;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Footer Styles */
+.footer {
+  position: relative; 
+  color: #000000;
+  text-align: center;
+  padding: 10px 0;
+  font-size: medium;
+  margin-top: 32%;
+}
+
+.social-icons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  margin-left: 10px ;
+  margin-top: 5%;
+}
+
+.social-icons > * {
+  margin-right: 10px;
+}
+
+.date-time {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  padding: 5px;
+  margin-bottom: 3%;
+}
+
+/* Header Styles */
+.page-header {
+  background-color: #4381ff;
+  color: #fff;
+  padding: 1px;
+  text-align: center;
+}
+
+/* Footer Styles */
+.page-footer {
+  margin-top: 22%;
+  background-color: #4381ff;
+  color: #fff;
+  text-align: center;
+  padding: 3px 0;
+}
+.page-footer-about {
+  margin-top: 27%;
+  background-color: #4381ff;
+  color: #fff;
+  text-align: center;
+  padding: 3px 0;
+}
+
+/* CSS for the <p> tag in About and Contact components */
+/* CSS for the <p> tag in About and Contact components */
+.about-container p,
+.contact-container p {
+  font-size: 16px; /* Example font size */
+  line-height: 1.5; /* Example line height */
+  color: #333; /* Example text color */
+  margin-bottom: 15px; /* Example bottom margin */
+}
+
+/* Profile Container Styles */
+/* Profile Container Styles */
+.container-profile {
+  max-width: 400px;
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.profile-details {
+  margin-top: 20px;
+}
+
+.profile-details > div {
+  margin-bottom: 15px;
+}
+
+.profile-details label {
+  font-weight: bold;
+  display: block;
+}
+
+.profile-details input[type="text"],
+.profile-details input[type="email"],
+.profile-details input[type="password"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: calc(100% - 16px);
+  box-sizing: border-box;
+}
+
+.password-input {
+  position: relative;
+}
+
+.password-input input[type="password"] {
+  padding-right: 32px;
+}
+
+.password-input .toggle-password,
+.password-input .edit-icon {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.edit-icon {
+  color: #007bff;
+}
+
+.edit-icon:hover {
+  color: #0056b3;
+}
+
+/* Save Changes Button Styles */
+.profile-details button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.profile-details button:hover {
+  background-color: #0056b3;
+}
+
+/* Flash Message Styles */

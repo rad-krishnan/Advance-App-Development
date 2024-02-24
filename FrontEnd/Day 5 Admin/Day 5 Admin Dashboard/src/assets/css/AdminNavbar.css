@@ -1,0 +1,27 @@
+/* AdminNavbar.css */
+.admin-navbar {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+}
+  
+.admin-navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+  
+.admin-navbar ul li {
+    display: inline;
+    margin-right: 10px;
+}
+  
+.admin-navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+  
+.admin-navbar ul li a:hover {
+    color: #ffd700; /* Change color on hover */
+}

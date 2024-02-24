@@ -1,0 +1,40 @@
+/* ViewPayment.css */
+.payment-history-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .payment-history-header {
+    text-align: center;
+  }
+  
+  .payment-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .payment-table th {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .payment-table td, .payment-table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .status-select {
+    background-color: #4caf50;
+    color: white;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .status-select:focus {
+    outline: none;
+  }  
